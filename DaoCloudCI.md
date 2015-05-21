@@ -174,7 +174,7 @@ Port: 27017
 您可以通过 *install* 标签来指定您对镜像的初始化脚本
 
     ＃which scripts you want to run before cloning repo
-    script:
+    install:
       - sudo apt-get update
       - sudo apt-get -y install bzr
 
@@ -183,6 +183,6 @@ Port: 27017
 您可以通过 *before_script* 标签来为您的测试做准备
 
     ＃which scripts you want to run before your test
-    script:
+    before_script:
       - go get github.com/onsi/ginkgo
       - go get labix.org/v2/mgo
