@@ -6,7 +6,7 @@ DaoCloud CI 使用基于Docker的容器技术来运行您的测试任务，确�
 
 您可以通过在代码根目录放置一个**daocloud.yml**文件来配置您的测试任务
 
-    image: ubuntu:14.04
+    image: daocloud/ci-golang:1.4
 
     services:
         - mongodb
