@@ -161,14 +161,6 @@ Port: 27017
       - MY_ENV = abc
 
 
-### 指定测试脚本
-
-您可以通过 *script* 标签来指定您的运行的测试任务
-
-    ＃which scripts you want to run your test
-    script:
-      - go test your-code
-
 ### 指定镜像初始化脚本
 
 您可以通过 *install* 标签来指定您对镜像的初始化脚本
@@ -186,3 +178,11 @@ Port: 27017
     before_script:
       - go get github.com/onsi/ginkgo
       - go get labix.org/v2/mgo
+
+### 指定测试脚本
+
+您可以通过 *script* 标签来指定您的运行的测试任务
+
+    ＃which scripts you want to run your test
+    script:
+      - go test your-code
