@@ -109,6 +109,8 @@ UserName: root
 
 Password: 不设密码
 
+Default Instance: test
+
 环境变量：
 
 * MYSQL_PORT = tcp://1.2.3.4:3306
