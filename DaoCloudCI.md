@@ -20,7 +20,7 @@ DaoCloud CI 使用基于Docker的容器技术来运行您的测试任务，确�
         - echo $MYENV
         - echo "This is an install segment"
         - echo "Here, we usually run scripts to setup a base environment"
-        - echo "For customized image, you can install git here using command apt-get install git-core"
+        - echo "For customized image, you can install git here using command apt-get install -y git-core"
 
     before_script:
         - echo $MYENV
