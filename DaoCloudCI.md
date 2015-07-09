@@ -46,7 +46,7 @@ DaoCloud CI 使用基于Docker的容器技术来运行您的测试任务，确�
 4. 执行before_script脚本
 5. 执行script脚本
 
-## Details
+## Platform images & Service images
 
 DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是基于 *Ubuntu14.04* )，目前支持的编程语言包括：
 
