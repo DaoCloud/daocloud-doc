@@ -126,7 +126,7 @@ DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是�
 
 您可以指定测试任务运行时依赖的服务，指定服务后，测试任务可以用docker link一致的方式去访问它。比如您指定要使用*mysql*, 那么您可以使用*mysql*作为域名来访问服务节点, 或者通过环境变量*MYSQL_PORT_3306_TCP_ADDR*来访问。 
 
-    ＃specify list of services you want to use during your test
+    ＃specify list of services you want to use in your test
     services:
       - mysql
       - mongodb
