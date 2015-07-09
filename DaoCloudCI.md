@@ -20,7 +20,8 @@ DaoCloud CI 使用基于Docker的容器技术来运行您的测试任务，确�
         - echo $MYENV
         - echo "This is an install segment"
         - echo "Here, we usually run scripts to setup a base environment"
-        - echo "For customized image, you can install git here using command apt-get install -y git-core"
+        - echo "For customized base image, you need to install git here unless you have git installed in your base image"
+        - echo "eg. apt-get install -y git-core"
 
     before_script:
         - echo $MYENV
@@ -32,7 +33,7 @@ DaoCloud CI 使用基于Docker的容器技术来运行您的测试任务，确�
         - echo "This is an script segment"
         - echo "Run test cases here"
         - echo ""
-        - echo "Below shows how to use services"
+        - echo "Below shows how to use services, mongodb/mysql/redis are the service host name"
         - ping -c 2 mongodb
         - ping -c 2 mysql
         - ping -c 2 redis
@@ -49,12 +50,15 @@ DaoCloud CI 使用基于Docker的容器技术来运行您的测试任务，确�
 
 DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是基于 *Ubuntu14.04* )，目前支持的编程语言包括：
 
-* Golang (1.4)
-* Python (2.7)
-* Ruby (1.9.3)
-* Java (openjdk7)
+* golang (1.0, 1.1, 1.2, 1.3, 1.4)
+* python (2.6, 2.7, 3.1, 3.2, 3.3, 3.4)
+* ruby   (1.8.7, 1.9.3, 2.0.0, 2.1.2, 2.1.4, 2.1.6, 2.2.0, 2.2.2)
+* java   (openjdk6, openjdk7, oraclejdk6, oraclejdk7, oraclejdk8, oraclejdk9)
+* node   (0.6, 0.8, 0.10, 0.12)
+* php    (5.5, 5.6)
+* gcc    (4.4, 4.6, 4.7, 4.8, 4.9, 5)
 
-为了方便您准备测试环境，我们还提供了丰富的测试服务：
+为了方便您准备测试环境，我们还提供了数据存储服务：
 
 * MySQL (5.5)
 * Redis (2.8)
@@ -75,10 +79,49 @@ DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是�
 
 您可以从下面的列表(DaoCloud准备好的镜像)中选择您希望的运行环境（该列表正在不断完善中）
 
-* daocloud/ci-ruby:1.9.3
-* daocloud/ci-java:openjdk7
+* daocloud/ci-python:2.6
 * daocloud/ci-python:2.7
+* daocloud/ci-python:3.1
+* daocloud/ci-python:3.2
+* daocloud/ci-python:3.3
+* daocloud/ci-python:3.4
+
+* daocloud/ci-golang:1.0
+* daocloud/ci-golang:1.1
+* daocloud/ci-golang:1.2
+* daocloud/ci-golang:1.3
 * daocloud/ci-golang:1.4
+
+* daocloud/ci-node:0.6
+* daocloud/ci-node:0.8
+* daocloud/ci-node:0.10
+* daocloud/ci-node:0.12
+
+* daocloud/ci-php:5.5
+* daocloud/ci-php:5.6
+
+* daocloud/ci-ruby:1.8.7
+* daocloud/ci-ruby:1.9.3
+* daocloud/ci-ruby:2.0.0
+* daocloud/ci-ruby:2.1.2
+* daocloud/ci-ruby:2.1.4
+* daocloud/ci-ruby:2.1.6
+* daocloud/ci-ruby:2.2.0
+* daocloud/ci-ruby:2.2.2
+
+* daocloud/ci-java:openjdk6
+* daocloud/ci-java:openjdk7
+* daocloud/ci-java:oraclejdk6
+* daocloud/ci-java:oraclejdk7
+* daocloud/ci-java:oraclejdk8
+* daocloud/ci-java:oraclejdk9
+
+* daocloud/ci-gcc:4.4
+* daocloud/ci-gcc:4.6
+* daocloud/ci-gcc:4.7
+* daocloud/ci-gcc:4.8
+* daocloud/ci-gcc:4.9
+* daocloud/ci-gcc:5
 
 当然你可以使用自己托管在 Docker Hub 上的镜像，比如
 
