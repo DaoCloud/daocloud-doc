@@ -85,21 +85,17 @@ DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是�
 * daocloud/ci-python:3.2
 * daocloud/ci-python:3.3
 * daocloud/ci-python:3.4
-
 * daocloud/ci-golang:1.0
 * daocloud/ci-golang:1.1
 * daocloud/ci-golang:1.2
 * daocloud/ci-golang:1.3
 * daocloud/ci-golang:1.4
-
 * daocloud/ci-node:0.6
 * daocloud/ci-node:0.8
 * daocloud/ci-node:0.10
 * daocloud/ci-node:0.12
-
 * daocloud/ci-php:5.5
 * daocloud/ci-php:5.6
-
 * daocloud/ci-ruby:1.8.7
 * daocloud/ci-ruby:1.9.3
 * daocloud/ci-ruby:2.0.0
@@ -108,14 +104,12 @@ DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是�
 * daocloud/ci-ruby:2.1.6
 * daocloud/ci-ruby:2.2.0
 * daocloud/ci-ruby:2.2.2
-
 * daocloud/ci-java:openjdk6
 * daocloud/ci-java:openjdk7
 * daocloud/ci-java:oraclejdk6
 * daocloud/ci-java:oraclejdk7
 * daocloud/ci-java:oraclejdk8
 * daocloud/ci-java:oraclejdk9
-
 * daocloud/ci-gcc:4.4
 * daocloud/ci-gcc:4.6
 * daocloud/ci-gcc:4.7
