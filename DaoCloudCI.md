@@ -90,6 +90,7 @@ DaoCloud为您准备了多种编程语言的测试环境(这些测试环境是�
 * daocloud/ci-golang:1.2
 * daocloud/ci-golang:1.3
 * daocloud/ci-golang:1.4
+* daocloud/ci-golang:1.5.1
 * daocloud/ci-node:0.6
 * daocloud/ci-node:0.8
 * daocloud/ci-node:0.10
